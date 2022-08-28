@@ -1,0 +1,20 @@
+.overflow{
+    overflow-x: auto;
+}
+.card{
+    border: 1px solid black;
+    min-width: 18rem;
+}
+.characterImg{
+    max-height: 270px;
+}
+i {
+    color: white;
+    float: right;
+    margin-top: 17px;
+    margin-right: 10px;
+  }
+  i:hover {
+    color: red;
+    cursor: pointer;
+  }
