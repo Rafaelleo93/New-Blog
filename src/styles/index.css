@@ -1,3 +1,16 @@
-*{
-    background-image: url("https://wallpapercave.com/w/wp2903046");
+* {
+    background-color: black;
+}
+
+.logo {
+    width: 100px;
+}
+.columna{
+    width: auto;
+    margin: auto;
+    margin-left: 60px;
+}
+
+.like{
+    margin-left: 320%;
 }

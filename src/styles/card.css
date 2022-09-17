@@ -1,20 +1,62 @@
-.overflow{
-    overflow-x: auto;
-}
-.card{
-    border: 1px solid black;
-    min-width: 18rem;
-}
-.characterImg{
+.characterImg {
     max-height: 270px;
 }
-i {
-    color: white;
-    float: right;
-    margin-top: 17px;
-    margin-right: 10px;
-  }
-  i:hover {
-    color: red;
-    cursor: pointer;
-  }
+
+.title {
+    color: #ede032;
+}
+
+.card-text {
+    color: #ede032;
+}
+
+.sub-title {
+    color: whitesmoke;
+}
+
+.more {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.more:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.more:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+.card {
+    min-width: 17rem;
+    background-color: #212121;
+    border: #212121 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+}
+
+.card:hover {
+    transform: translateY(-1.5rem);
+    border: #f2295bf0 0.2em solid;
+}

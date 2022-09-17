@@ -5,7 +5,7 @@ import { Home } from "./views/home";
 import CharacterDetails from "./views/CharacterDetails.jsx";
 import PlanetDetails from "./views/PlanetDetails.jsx";
 import StarshipDetails from "./views/StarshipDetails.jsx";
-
+import "../styles/index.css"
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import injectContext from "./store/appContext";
