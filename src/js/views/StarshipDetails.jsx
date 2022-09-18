@@ -19,7 +19,7 @@ const StarshipDetails = () => {
           <img src={starshipImg[params.id]} />
         </div>
         <div className="col">
-          <p>
+          <p className="text-white">
             Nos encontramos en un periodo de guerra civil. Las naves espaciales
             rebeldes, atacando desde una base oculta, han logrado su primera
             victoria contra el malvado Imperio Galáctico. Durante la batalla,
@@ -36,32 +36,44 @@ const StarshipDetails = () => {
       <div className="container row border-top border-danger mt-4 text-capitalize">
         <div className="col-2 text-danger text-center">
           <b>Name:</b>
-          <p><em>{store.starship[params.id].name}</em></p>
+          <p>
+            <em>{store.starship[params.id].name}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Manufacturer:</b>
-          <p><em>{store.starship[params.id].manufacturer}</em></p>
+          <p>
+            <em>{store.starship[params.id].manufacturer}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Const in credits:</b>
-          <p><em>{store.starship[params.id].gencost_in_creditsder}</em></p>
+          <p>
+            <em>{store.starship[params.id].gencost_in_creditsder}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Max. Atmosphering speed:</b>
-          <p><em>{store.starship[params.id].max_atmosphering_speed}</em></p>
+          <p>
+            <em>{store.starship[params.id].max_atmosphering_speed}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Crew:</b>
-          <p><em>{store.starship[params.id].crew}</em></p>
+          <p>
+            <em>{store.starship[params.id].crew}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Passengers:</b>
-          <p><em>{store.starship[params.id].passengers}</em></p>
+          <p>
+            <em>{store.starship[params.id].passengers}</em>
+          </p>
         </div>
       </div>
       <br />
       <Link to="/">
-        <button className="btn btn-primary">Back home</button>
+        <button className="btn back">Back home</button>
       </Link>
     </div>
   );

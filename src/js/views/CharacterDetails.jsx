@@ -18,7 +18,7 @@ const CharacterDetails = () => {
           />
         </div>
         <div className="col">
-          <p>
+          <p className="text-white">
             La República Galáctica está sumida en el caos. Los impuestos de las
             rutas comerciales a los sistemas estelares exteriores están en
             disputa. Esperando resolver el asunto con un bloqueo de poderosas
@@ -34,32 +34,44 @@ const CharacterDetails = () => {
       <div className="container row border-top border-danger mt-4 text-capitalize">
         <div className="col-2 text-danger text-center">
           <b>Name:</b>
-          <p><em>{store.character[params.id].name}</em></p>
+          <p>
+            <em>{store.character[params.id].name}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Birth year:</b>
-          <p><em>{store.character[params.id].birth_year}</em></p>
+          <p>
+            <em>{store.character[params.id].birth_year}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Gender:</b>
-          <p><em>{store.character[params.id].gender}</em></p>
+          <p>
+            <em>{store.character[params.id].gender}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Height:</b>
-          <p><em>{store.character[params.id].height}</em></p>
+          <p>
+            <em>{store.character[params.id].height}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Skin color:</b>
-          <p><em>{store.character[params.id].skin_color}</em></p>
+          <p>
+            <em>{store.character[params.id].skin_color}</em>
+          </p>
         </div>
         <div className="col-2 text-danger text-center">
           <b>Eye color:</b>
-          <p><em>{store.character[params.id].eye_color}</em></p>
+          <p>
+            <em>{store.character[params.id].eye_color}</em>
+          </p>
         </div>
       </div>
       <br />
       <Link to="/">
-        <button className="btn btn-primary">Back home</button>
+        <button className="btn back">Back home</button>
       </Link>
     </div>
   );

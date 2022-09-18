@@ -39,19 +39,28 @@ const StarshipCard = () => {
                 </p>
               </div>
               <div className="d-flex p-3">
-              <div>
-                <Link to={`/vehicles/${i}`}>
-                  <button className="btn more">More!</button>
-                </Link>
-              </div>
-              <div>
-              <button 
-              type="button"
-              className="btn like"
-              onClick={()=> {actions.addFavorite(starship)}}>
-                {store.favoritos.includes(starship) ? <BsHeartFill style={{color: 'yellow', fontSize: '20px'}}/> : <BsHeart style={{color: 'yellow', fontSize: '20px'}} />}
-              </button>
-              </div>
+                <div>
+                  <Link to={`/vehicles/${i}`}>
+                    <button className="btn more">More!</button>
+                  </Link>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    className="btn like"
+                    onClick={() => {
+                      actions.addFavorite(starship);
+                    }}
+                  >
+                    {store.favoritos.includes(starship) ? (
+                      <BsHeartFill
+                        style={{ color: "yellow", fontSize: "20px" }}
+                      />
+                    ) : (
+                      <BsHeart style={{ color: "yellow", fontSize: "20px" }} />
+                    )}
+                  </button>
+                </div>
               </div>
             </div>
           ))}

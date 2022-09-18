@@ -10,22 +10,25 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-lg border-bottom">
       <div className="container-fluid">
         <div className="logo">
-        <Link to="/">
-          <a className="navbar-brand" href="#">
-            <img
-              className="logo"
-              src="https://www.wallpaperflare.com/static/929/720/1006/star-wars-general-grievous-star-wars-wallpaper-preview.jpg"
-            />
-          </a>
-        </Link>
+          <Link to="/">
+            <a className="navbar-brand" href="#">
+              <img
+                className="logo"
+                src="https://www.wallpaperflare.com/static/929/720/1006/star-wars-general-grievous-star-wars-wallpaper-preview.jpg"
+              />
+            </a>
+          </Link>
         </div>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <button
             className="btn dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <BsHeartFill style={{color: 'yellow', fontSize: '20px'}} />
+            <BsHeartFill style={{ color: "yellow", fontSize: "20px" }} />
           </button>
           <ul className="dropdown-menu dropdown-menu-end">
             <li className="text-white mx-2 my-1 text-center">Favorites</li>

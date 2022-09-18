@@ -36,19 +36,28 @@ const CharacterCard = () => {
                 </p>
               </div>
               <div className="d-flex p-3">
-              <div>
-                <Link to={`/people/${i}`}>
-                  <button className="btn more">More!</button>
-                </Link>
-              </div>
-              <div>
-              <button 
-              type="button"
-              className="btn like "
-              onClick={()=> {actions.addFavorite(character)}}>
-                {store.favoritos.includes(character) ? <BsHeartFill style={{color: 'yellow', fontSize: '20px'}} /> : <BsHeart style={{color: 'yellow', fontSize: '20px'}} />}
-              </button>
-              </div>
+                <div>
+                  <Link to={`/people/${i}`}>
+                    <button className="btn more">More!</button>
+                  </Link>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    className="btn like "
+                    onClick={() => {
+                      actions.addFavorite(character);
+                    }}
+                  >
+                    {store.favoritos.includes(character) ? (
+                      <BsHeartFill
+                        style={{ color: "yellow", fontSize: "20px" }}
+                      />
+                    ) : (
+                      <BsHeart style={{ color: "yellow", fontSize: "20px" }} />
+                    )}
+                  </button>
+                </div>
               </div>
             </div>
           ))}
